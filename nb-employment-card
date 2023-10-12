@@ -1,0 +1,39 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"@protected": true,
+
+		"name": "http://schema.org/name",
+		"description": "http://schema.org/description",
+		"identifier": "http://schema.org/identifier",
+		"image": {
+			"@id": "http://schema.org/image",
+			"@type": "@id"
+		},
+
+		"SmartEmploymentCard": {
+			"@id": "https://dev.nborbit.net/nb-employment-card.jsonld#SmartEmploymentCard",
+			"@context": {
+				"@version": 1.1,
+				"@protected": true,
+
+				"id": "@id",
+				"type": "@type",
+
+				"schema": "http://schema.org/",
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+
+				"name": "schema:name",
+				"birthDate": {
+			                "@id': "schema:birthDate",
+			                "@type': "xsd:dateTime",
+			              },
+				"roleName":  "schema:roleName",
+				"gender": "schema:gender",
+				"number": "schema:number",
+				"employmentType": "schema:employmentType",
+				"email": "schema:email"
+			}
+		}
+	}
+}
